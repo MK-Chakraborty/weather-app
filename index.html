@@ -1,0 +1,62 @@
+<!-- openweathermap -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: rgb(39, 41, 42);
+        }
+
+        .mainContainer {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section class="container py-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                    <div class="mainContainer border border-info border-5 w-100 my-5 p-5">
+                        <h1 class="fs-1 fw-bold lh-lg text-info text-center py-5">Weather Today</h1>
+
+                        <div class="input-group input-group-lg pb-5">
+                            <input type="text" id="searchBox" class="form-control fs-4 text-success bg-black-50"
+                                placeholder="City Name">
+                            <button class="btn btn-info fs-4 fw-bold text-black-50" type="button"
+                                id="searchBtn">Search</button>
+                        </div>
+
+                        <div class="card text-dark bg-info mx-auto my-5" style="max-width: 24rem;">
+                            <div class="card-header text-center fs-5 lh-lg fw-bold">Weather Information</div>
+                            <div class="card-body text-center" id="weatherInfo">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <p class="text-white-50 text-center">Developed by: M.K.</p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
