@@ -10,6 +10,7 @@ const displayWeatherInfo = (data) => {
     let weatherInfoContainer = document.getElementById('weatherInfo');
     weatherInfoContainer.innerHTML = `
         <h3 class="card-title fs-3 fw-bold lh-lg text-Dark text-center pb-3 pt-5 ">${data.name}</h3>
+        <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">
         <h1 class="card-text fs-1 fw-bold text-Dark text-center">${Math.round(data.main.temp - 273)} <sup>°C</sup></h1>
         <h3 class="card-title fs-3 fw-bold lh-lg text-Dark text-center ">${data.weather[0].main}</h3>
         <hr class="border border-white border-5">
